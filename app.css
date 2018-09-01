@@ -1,0 +1,126 @@
+@import "reset.css";
+
+
+@keyframes news {
+   from{
+     top:-40px;
+     opacity: 0;
+   }
+   to{
+     top: 0;
+     opacity: 1;
+   }
+}
+
+body{
+  background: #04aef7;
+  color: #FFF;
+  overflow: hidden;
+}
+.main{
+  min-height: 100vh;
+  padding-top: 20px;
+  position: relative;
+}
+
+input{
+  display: block;
+  width: 500px;
+  max-width: 90%;
+  margin: 20px auto;
+  height: 40px;
+  background: transparent;
+  border-radius: 3px;
+  outline: 0;
+  font-size: 19px;
+  padding: 0 10px;
+  border: 0;
+  border-bottom: 1px solid #FFF;
+  color: #FFF;
+}
+input::placeholder{
+  color:#F5F5F5;
+}
+button{
+  display: block;
+  width: 380px;
+  max-width: 75%;
+  margin: 20px auto;
+  height: 40px;
+  transition: .5s;
+  background: #FFF;
+  font-size: 17px;
+  color: #393939;
+  cursor: pointer;
+  border:0;
+  outline: 0;
+  border-radius: 3px;
+}
+button:hover{
+  width: 410px;
+}
+
+.botton-order{
+  position: absolute;
+  background: #268de6;
+  width: 100vw;
+  bottom:0;
+  left: 0;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+}
+.botton-order:hover{
+  opacity: .8;
+}
+
+.events{
+  display: block;
+  font-size: 25px;
+  width: 300px;
+  max-width: 90%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+
+.results{
+  text-align: center;
+}
+.results span{
+  display: block;
+  margin:5px;
+}
+
+.content{
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: auto 20px;
+  height: 70px;
+  margin-top: 150px;
+}
+.content ul{
+  display: flex;
+}
+
+.content li{
+  display: inline-block;
+  margin-right: 7px;
+  background: #FFF;
+  height: 70px;
+  top:0;
+  animation: news 1s;
+  right: 0;
+  left: 0;
+  width: 70px;
+  text-align: center;
+  transition: top 1s, left .5s, right .5s;
+  position: relative;
+  line-height: 70px;
+  color: #000;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 600;
+}
